@@ -8,16 +8,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
 
     @Autowired
-    private OrderDao orderDao;
-
-    @Autowired
-    private ProductClient client;
+    private OrderService orderService;
 
     @RequestMapping("/addOrder")
     public String addOrder() {
-        orderDao.addOrder("123");
-        client.updateProduct(1);
-        return "123";
+        return orderService.addOrder();
     }
 
 

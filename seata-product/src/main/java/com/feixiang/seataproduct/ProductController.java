@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
 
     @Autowired
-    private ProductDao productDao;
+    private ProductService productService;
 
     @GetMapping("/updateProduct/{id}")
     public String updateProduct(@PathVariable("id") int id){
         System.out.println("id="+id);
-        productDao.updateProduct();
+        productService.updateProduct();
         return "abc";
     }
 }

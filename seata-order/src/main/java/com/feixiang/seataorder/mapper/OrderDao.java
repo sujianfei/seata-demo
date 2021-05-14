@@ -1,13 +1,14 @@
-package com.feixiang.seataorder;
+package com.feixiang.seataorder.mapper;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
-@Mapper
+@Repository
 public interface OrderDao {
 
-    @Insert("insert into seata_order.order(id,orderNo) values(1,#{orderNo})")
+
     public void addOrder(@Param("orderNo") String orderNo);
 
 }

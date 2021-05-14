@@ -1,5 +1,6 @@
 package com.feixiang.seataorder;
 
+import com.feixiang.seataorder.mapper.OrderDao;
 import io.seata.spring.annotation.GlobalTransactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

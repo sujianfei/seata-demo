@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 public interface OrderDao {
 
 
-    public void addOrder(@Param("orderNo") String orderNo);
+    public void modifyAccount(@Param("id") int id);
 
 }

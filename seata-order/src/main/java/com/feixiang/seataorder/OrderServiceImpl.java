@@ -15,8 +15,8 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     @GlobalTransactional
-    public String addOrder() {
-        orderDao.addOrder("123");
+    public String modifyAccount(int id) {
+        orderDao.modifyAccount(id);
         client.updateProduct(1);
         int i=1/0;
         return "123";
